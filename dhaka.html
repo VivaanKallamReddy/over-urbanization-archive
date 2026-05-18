@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dhaka Case Study | The Over-Urbanization Archive</title>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+
+        .city-hero{
+            height:70vh;
+            background:
+            linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+            url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop');
+
+            background-size:cover;
+            background-position:center;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            color:white;
+        }
+
+        .city-hero h1{
+            color:white;
+            margin-bottom:20px;
+        }
+
+        .city-hero p{
+            color:white;
+            font-size:1.2rem;
+            max-width:800px;
+            margin:auto;
+        }
+
+        .city-overview{
+            background:white;
+        }
+
+        .overview-grid{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:70px;
+            align-items:center;
+        }
+
+        .overview-image img{
+            width:100%;
+            border-radius:25px;
+            box-shadow:0 20px 40px rgba(0,0,0,0.08);
+        }
+
+        .overview-text p{
+            margin-bottom:25px;
+        }
+
+        .impact-section{
+            background:#fafafa;
+        }
+
+        .impact-card{
+            background:white;
+            padding:50px;
+            border-radius:25px;
+            margin-bottom:50px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .impact-card i{
+            font-size:3rem;
+            color:var(--sky-blue);
+            margin-bottom:25px;
+        }
+
+        .impact-card p{
+            margin-bottom:25px;
+        }
+
+        .quote-banner{
+            background:var(--sky-blue);
+            padding:90px 10%;
+            text-align:center;
+        }
+
+        .quote-banner p{
+            color:white;
+            font-size:1.5rem;
+            max-width:1000px;
+            margin:auto;
+            line-height:2;
+        }
+
+        .gallery-section{
+            background:white;
+        }
+
+        .gallery-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+            gap:30px;
+            margin-top:60px;
+        }
+
+        .gallery-grid img{
+            width:100%;
+            height:300px;
+            object-fit:cover;
+            border-radius:20px;
+        }
+
+        .sources-section{
+            background:#fafafa;
+        }
+
+        .sources-box{
+            background:white;
+            padding:50px;
+            border-radius:25px;
+            max-width:1000px;
+            margin:auto;
+            box-shadow:0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .sources-box a{
+            display:block;
+            margin-bottom:20px;
+            color:var(--sky-blue);
+            font-weight:500;
+        }
+
+        @media(max-width:1000px){
+
+            .overview-grid{
+                grid-template-columns:1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Over-Urbanization Archive
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../archive.html">Archive</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../login.html" class="login-btn">Login</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="city-hero">
+
+        <div class="fade-up">
+
+            <h1>
+                Dhaka, Bangladesh
+            </h1>
+
+            <p>
+                A rapidly growing megacity facing climate migration,
+                overcrowding, pollution, and infrastructure pressure.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- OVERVIEW -->
+
+    <section class="city-overview">
+
+        <div class="container">
+
+            <div class="overview-grid">
+
+                <div class="overview-text fade-up">
+
+                    <h2>
+                        Urban Growth In Dhaka
+                    </h2>
+
+                    <p>
+                        Dhaka is one of the fastest-growing cities in the world.
+                        Millions of migrants moved into the city because of
+                        poverty, flooding, and climate-related displacement
+                        from rural areas.
+                    </p>
+
+                    <p>
+                        The city’s garment industry created major employment
+                        opportunities, but infrastructure systems failed to
+                        expand quickly enough to support the growing population.
+                    </p>
+
+                    <p>
+                        Overcrowding, traffic congestion, pollution, and
+                        inadequate housing became major challenges across
+                        the city. Dhaka demonstrates the connection between
+                        climate migration and over-urbanization.
+                    </p>
+
+                </div>
+
+                <div class="overview-image fade-up">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?q=80&w=1200&auto=format&fit=crop"
+                    alt="Dhaka">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- IMPACTS -->
+
+    <section class="impact-section">
+
+        <div class="container">
+
+            <!-- SOCIAL -->
+
+            <div class="impact-card fade-up">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h2>
+                    Social Impacts
+                </h2>
+
+                <p>
+                    Millions of residents live in overcrowded informal
+                    settlements with poor sanitation and limited access
+                    to healthcare and clean water.
+                </p>
+
+                <p>
+                    Air pollution and contaminated water create serious
+                    health risks for low-income communities. Respiratory
+                    diseases and waterborne illnesses remain common.
+                </p>
+
+                <p>
+                    Traffic congestion also reduces quality of life because
+                    workers spend several hours travelling through crowded
+                    roads each day.
+                </p>
+
+            </div>
+
+            <!-- ECONOMIC -->
+
+            <div class="impact-card fade-up">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <h2>
+                    Economic Impacts
+                </h2>
+
+                <p>
+                    Dhaka’s garment industry became a major driver of
+                    Bangladesh’s economy and created employment for
+                    millions of workers.
+                </p>
+
+                <p>
+                    However, congestion and infrastructure strain reduce
+                    productivity and increase transportation costs across
+                    the city.
+                </p>
+
+                <p>
+                    Informal housing and overcrowding demonstrate how
+                    economic growth has not fully improved living
+                    conditions for many residents.
+                </p>
+
+            </div>
+
+            <!-- POLITICAL -->
+
+            <div class="impact-card fade-up">
+
+                <i class="fa-solid fa-landmark"></i>
+
+                <h2>
+                    Political Impacts
+                </h2>
+
+                <p>
+                    Dhaka’s rapid growth places enormous pressure on
+                    government authorities to improve housing, transport,
+                    and disaster management systems.
+                </p>
+
+                <p>
+                    Climate migration increased political concerns about
+                    long-term urban planning and sustainable development.
+                </p>
+
+                <p>
+                    Weak enforcement of building regulations and poor
+                    environmental protections continue to create
+                    governance challenges across the city.
+                </p>
+
+            </div>
+
+            <!-- ENVIRONMENTAL -->
+
+            <div class="impact-card fade-up">
+
+                <i class="fa-solid fa-leaf"></i>
+
+                <h2>
+                    Environmental Impacts
+                </h2>
+
+                <p>
+                    Air pollution from vehicles, factories, and waste
+                    burning severely affects public health and air quality.
+                </p>
+
+                <p>
+                    Rivers surrounding the city became heavily polluted
+                    due to industrial waste and poor waste management
+                    systems.
+                </p>
+
+                <p>
+                    Wetlands and green spaces disappeared as urban
+                    expansion accelerated, increasing flood risks
+                    during monsoon seasons.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- QUOTE -->
+
+    <section class="quote-banner">
+
+        <p class="fade-up">
+
+            “Dhaka demonstrates how climate migration and rapid
+            urban expansion can overwhelm infrastructure systems
+            and environmental stability.”
+
+        </p>
+
+    </section>
+
+    <!-- GALLERY -->
+
+    <section class="gallery-section">
+
+        <div class="container">
+
+            <div class="text-center fade-up">
+
+                <h2>
+                    Urban Gallery
+                </h2>
+
+                <p>
+                    Visual documentation of density,
+                    migration, and environmental pressure.
+                </p>
+
+            </div>
+
+            <div class="gallery-grid">
+
+                <img
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
+                alt="Dhaka">
+
+                <img
+                src="https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=1200&auto=format&fit=crop"
+                alt="Dhaka">
+
+                <img
+                src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?q=80&w=1200&auto=format&fit=crop"
+                alt="Dhaka">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SOURCES -->
+
+    <section class="sources-section">
+
+        <div class="container">
+
+            <div class="sources-box fade-up">
+
+                <h2>
+                    Sources
+                </h2>
+
+                <a href="https://www.britannica.com/place/Dhaka" target="_blank">
+                    Britannica — Dhaka
+                </a>
+
+                <a href="https://unhabitat.org/" target="_blank">
+                    UN Habitat
+                </a>
+
+                <a href="https://www.worldbank.org/ext/en/country/bangladesh" target="_blank">
+                    World Bank — Bangladesh
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+
+                <h3>
+                    The Over-Urbanization Archive
+                </h3>
+
+                <p>
+                    Researching the impacts of rapid urban growth
+                    through global case studies and analysis.
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>
+                    Navigation
+                </h3>
+
+                <p><a href="../index.html">Home</a></p>
+                <p><a href="../about.html">About</a></p>
+                <p><a href="../archive.html">Archive</a></p>
+                <p><a href="../contact.html">Contact</a></p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>
+                    Follow
+                </h3>
+
+                <div class="social-icons">
+
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-youtube"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+
+            © 2026 The Over-Urbanization Archive
+
+        </div>
+
+    </footer>
+
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

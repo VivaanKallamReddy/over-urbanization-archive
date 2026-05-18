@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lagos Case Study | The Over-Urbanization Archive</title>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+
+        .city-hero{
+            height:70vh;
+            background:
+            linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+            url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1600&auto=format&fit=crop');
+
+            background-size:cover;
+            background-position:center;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+
+            color:white;
+        }
+
+        .city-hero h1{
+            color:white;
+            margin-bottom:20px;
+        }
+
+        .city-hero p{
+            color:white;
+            font-size:1.2rem;
+            max-width:800px;
+            margin:auto;
+        }
+
+        .city-overview{
+            background:white;
+        }
+
+        .overview-grid{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:70px;
+            align-items:center;
+        }
+
+        .overview-image img{
+            width:100%;
+            border-radius:25px;
+            box-shadow:0 20px 40px rgba(0,0,0,0.08);
+        }
+
+        .overview-text p{
+            margin-bottom:25px;
+        }
+
+        .impact-section{
+            background:#fafafa;
+        }
+
+        .impact-card{
+            background:white;
+            padding:50px;
+            border-radius:25px;
+            margin-bottom:50px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .impact-card i{
+            font-size:3rem;
+            color:var(--sky-blue);
+            margin-bottom:25px;
+        }
+
+        .impact-card p{
+            margin-bottom:25px;
+        }
+
+        .quote-banner{
+            background:var(--sky-blue);
+            padding:90px 10%;
+            text-align:center;
+        }
+
+        .quote-banner p{
+            color:white;
+            font-size:1.5rem;
+            max-width:1000px;
+            margin:auto;
+            line-height:2;
+        }
+
+        .gallery-section{
+            background:white;
+        }
+
+        .gallery-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+            gap:30px;
+            margin-top:60px;
+        }
+
+        .gallery-grid img{
+            width:100%;
+            height:300px;
+            object-fit:cover;
+            border-radius:20px;
+        }
+
+        .sources-section{
+            background:#fafafa;
+        }
+
+        .sources-box{
+            background:white;
+            padding:50px;
+            border-radius:25px;
+            max-width:1000px;
+            margin:auto;
+            box-shadow:0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .sources-box a{
+            display:block;
+            margin-bottom:20px;
+            color:var(--sky-blue);
+            font-weight:500;
+        }
+
+        @media(max-width:1000px){
+
+            .overview-grid{
+                grid-template-columns:1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Over-Urbanization Archive
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../archive.html">Archive</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../login.html" class="login-btn">Login</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="city-hero">
+
+        <div class="fade-up">
+
+            <h1>
+                Lagos, Nigeria
+            </h1>
+
+            <p>
+                One of Africa’s fastest growing megacities facing
+                overcrowding, flooding, inequality, and infrastructure strain.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- OVERVIEW -->
+
+    <section class="city-overview">
+
+        <div class="container">
+
+            <div class="overview-grid">
+
+                <div class="overview-text fade-up">
+
+                    <h2>
+                        Urban Growth In Lagos
+                    </h2>
+
+                    <p>
+                        Lagos has rapidly transformed into one of the largest
+                        urban centers in Africa. Economic opportunities in trade,
+                        technology, and manufacturing attracted migrants from
+                        across Nigeria and neighboring countries.
+                    </p>
+
+                    <p>
+                        However, population growth expanded faster than the
+                        city’s infrastructure systems. Housing shortages,
+                        traffic congestion, sanitation problems, and flooding
+                        became increasingly severe as urban density rose.
+                    </p>
+
+                    <p>
+                        Informal settlements such as Makoko demonstrate the
+                        challenges created by uncontrolled urban expansion.
+                        Lagos highlights both the economic potential and the
+                        risks associated with over-urbanization.
+                    </p>
+
+                </div>
+
+                <div class="overview-image fade-up">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
+                    alt="Lagos">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- IMPACTS -->
+
+    <section class="impact-section">
+
+        <div class="container">
+
+            <!-- SOCIAL -->
+
+            <div class="impact-card fade-up">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h2>
+                    Social Impacts
+                </h2>
+
+                <p>
+                    Rapid population growth caused overcrowded neighborhoods
+                    and the expansion of informal settlements across Lagos.
+                    Communities such as Makoko lack proper sanitation,
+                    healthcare access, and reliable electricity systems.
+                </p>
+
+                <p>
+                    Many residents work in unstable informal sectors with low
+                    income security. Poverty and inequality continue to affect
+                    educational opportunities and overall quality of life.
+                </p>
+
+                <p>
+                    Social tension and crime increased in some districts where
+                    economic opportunities remain limited despite urban growth.
+                </p>
+
+            </div>
+
+            <!-- ECONOMIC -->
+
+            <div class="impact-card fade-up">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <h2>
+                    Economic Impacts
+                </h2>
+
+                <p>
+                    Lagos functions as Nigeria’s economic center and supports
+                    major industries, trade networks, and business development.
+                    Urbanization created employment opportunities and attracted
+                    investment into the city.
+                </p>
+
+                <p>
+                    However, severe traffic congestion and infrastructure
+                    strain reduce productivity and increase transportation costs.
+                    Flooding also damages businesses and informal markets.
+                </p>
+
+                <p>
+                    Economic growth remains uneven because wealth distribution
+                    heavily favors wealthier communities while many residents
+                    continue living in poverty.
+                </p>
+
+            </div>
+
+            <!-- POLITICAL -->
+
+            <div class="impact-card fade-up">
+
+                <i class="fa-solid fa-landmark"></i>
+
+                <h2>
+                    Political Impacts
+                </h2>
+
+                <p>
+                    Rapid urban growth places pressure on the Lagos State
+                    Government to improve housing, transport systems,
+                    infrastructure, and sanitation services.
+                </p>
+
+                <p>
+                    Redevelopment and eviction projects affecting informal
+                    settlements sometimes create conflict between authorities
+                    and local communities.
+                </p>
+
+                <p>
+                    Weak planning systems and corruption also reduce the
+                    effectiveness of some urban development projects.
+                </p>
+
+            </div>
+
+            <!-- ENVIRONMENTAL -->
+
+            <div class="impact-card fade-up">
+
+                <i class="fa-solid fa-leaf"></i>
+
+                <h2>
+                    Environmental Impacts
+                </h2>
+
+                <p>
+                    Lagos experiences severe flooding due to heavy rainfall,
+                    rising sea levels, and weak drainage systems. Informal
+                    settlements located near water remain especially vulnerable.
+                </p>
+
+                <p>
+                    Waste management systems struggle to handle large amounts
+                    of garbage, leading to polluted waterways and environmental
+                    degradation.
+                </p>
+
+                <p>
+                    Industrial pollution and vehicle emissions continue to
+                    reduce air quality and affect public health across the city.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- QUOTE -->
+
+    <section class="quote-banner">
+
+        <p class="fade-up">
+
+            “Lagos demonstrates how rapid urban expansion can create
+            economic opportunity while simultaneously intensifying
+            inequality and environmental pressure.”
+
+        </p>
+
+    </section>
+
+    <!-- GALLERY -->
+
+    <section class="gallery-section">
+
+        <div class="container">
+
+            <div class="text-center fade-up">
+
+                <h2>
+                    Urban Gallery
+                </h2>
+
+                <p>
+                    Visual documentation of growth, density,
+                    and infrastructure pressure.
+                </p>
+
+            </div>
+
+            <div class="gallery-grid">
+
+                <img
+                src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop"
+                alt="Lagos">
+
+                <img
+                src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?q=80&w=1200&auto=format&fit=crop"
+                alt="Lagos">
+
+                <img
+                src="https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=1200&auto=format&fit=crop"
+                alt="Lagos">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SOURCES -->
+
+    <section class="sources-section">
+
+        <div class="container">
+
+            <div class="sources-box fade-up">
+
+                <h2>
+                    Sources
+                </h2>
+
+                <a href="https://www.nationalgeographic.com/" target="_blank">
+                    National Geographic
+                </a>
+
+                <a href="https://www.worldbank.org/ext/en/country/nigeria" target="_blank">
+                    World Bank — Nigeria
+                </a>
+
+                <a href="https://unhabitat.org/" target="_blank">
+                    UN Habitat
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+
+                <h3>
+                    The Over-Urbanization Archive
+                </h3>
+
+                <p>
+                    Researching the impacts of rapid urban growth
+                    through global case studies and analysis.
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>
+                    Navigation
+                </h3>
+
+                <p><a href="../index.html">Home</a></p>
+                <p><a href="../about.html">About</a></p>
+                <p><a href="../archive.html">Archive</a></p>
+                <p><a href="../contact.html">Contact</a></p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>
+                    Follow
+                </h3>
+
+                <div class="social-icons">
+
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-youtube"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+
+            © 2026 The Over-Urbanization Archive
+
+        </div>
+
+    </footer>
+
+    <script src="../js/main.js"></script>
+
+</body>
+</html>
