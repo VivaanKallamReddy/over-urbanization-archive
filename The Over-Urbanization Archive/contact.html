@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | The Over-Urbanization Archive</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+
+        .contact-hero{
+            height:55vh;
+
+            background:
+            linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+            url('https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1600&auto=format&fit=crop');
+
+            background-size:cover;
+            background-position:center;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+
+            color:white;
+        }
+
+        .contact-hero h1{
+            color:white;
+            margin-bottom:20px;
+        }
+
+        .contact-hero p{
+            color:white;
+            max-width:700px;
+            margin:auto;
+            font-size:1.15rem;
+        }
+
+        .contact-section{
+            background:white;
+        }
+
+        .contact-grid{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:60px;
+            align-items:start;
+        }
+
+        .contact-form{
+            background:white;
+            padding:50px;
+            border-radius:25px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .contact-form h2{
+            margin-bottom:30px;
+        }
+
+        .input-group{
+            margin-bottom:25px;
+        }
+
+        .input-group input,
+        .input-group textarea{
+            width:100%;
+            padding:18px;
+            border:1px solid #ddd;
+            border-radius:12px;
+            font-size:1rem;
+            font-family:'Poppins', sans-serif;
+            transition:0.3s;
+        }
+
+        .input-group input:focus,
+        .input-group textarea:focus{
+            border-color:var(--sky-blue);
+            outline:none;
+        }
+
+        .input-group textarea{
+            min-height:180px;
+            resize:none;
+        }
+
+        .submit-btn{
+            width:100%;
+            padding:18px;
+            background:var(--sky-blue);
+            border:none;
+            color:white;
+            font-size:1rem;
+            border-radius:12px;
+            cursor:pointer;
+            transition:0.3s;
+            font-weight:600;
+        }
+
+        .submit-btn:hover{
+            opacity:0.9;
+        }
+
+        .contact-info{
+            display:flex;
+            flex-direction:column;
+            gap:30px;
+        }
+
+        .info-card{
+            background:#fafafa;
+            padding:40px;
+            border-radius:25px;
+            transition:0.3s;
+        }
+
+        .info-card:hover{
+            transform:translateY(-8px);
+        }
+
+        .info-card i{
+            font-size:2.5rem;
+            color:var(--sky-blue);
+            margin-bottom:20px;
+        }
+
+        .info-card h3{
+            margin-bottom:15px;
+        }
+
+        .info-card p,
+        .info-card a{
+            color:#555;
+            line-height:1.8;
+        }
+
+        .faq-section{
+            background:#fafafa;
+        }
+
+        .faq-container{
+            max-width:1000px;
+            margin:auto;
+            margin-top:60px;
+        }
+
+        .faq-item{
+            background:white;
+            padding:35px;
+            border-radius:20px;
+            margin-bottom:25px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.06);
+        }
+
+        .faq-item h3{
+            margin-bottom:15px;
+            color:var(--sky-blue);
+        }
+
+        @media(max-width:1000px){
+
+            .contact-grid{
+                grid-template-columns:1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Over-Urbanization Archive
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="archive.html">Archive</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html" class="login-btn">Login</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="contact-hero">
+
+        <div class="fade-up">
+
+            <h1>
+                Contact The Archive
+            </h1>
+
+            <p>
+                Questions, suggestions, collaborations, or research inquiries —
+                feel free to get in touch.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT SECTION -->
+
+    <section class="contact-section">
+
+        <div class="container">
+
+            <div class="contact-grid">
+
+                <!-- FORM -->
+
+                <div class="contact-form fade-up">
+
+                    <h2>
+                        Send A Message
+                    </h2>
+
+                    <form id="contactForm">
+
+                        <div class="input-group">
+
+                            <input
+                            type="text"
+                            placeholder="Your Name"
+                            required>
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <input
+                            type="email"
+                            placeholder="Your Email"
+                            required>
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <textarea
+                            placeholder="Your Message"
+                            required></textarea>
+
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+
+                            Send Message
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+                <!-- CONTACT INFO -->
+
+                <div class="contact-info fade-up">
+
+                    <div class="info-card">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <h3>
+                            Gmail
+                        </h3>
+
+                        <p>
+                            Urbanization.up@gmail.com
+                        </p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                        <h3>
+                            Instagram
+                        </h3>
+
+                        <p>
+                            @Urbanover
+                        </p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <i class="fa-solid fa-earth-americas"></i>
+
+                        <h3>
+                            Purpose
+                        </h3>
+
+                        <p>
+                            The Over-Urbanization Archive was created to
+                            educate people about the impacts of rapid
+                            urban growth through modern research and
+                            global case studies.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FAQ -->
+
+    <section class="faq-section">
+
+        <div class="container">
+
+            <div class="text-center fade-up">
+
+                <h2>
+                    Frequently Asked Questions
+                </h2>
+
+                <p>
+                    Common questions regarding the archive and its research.
+                </p>
+
+            </div>
+
+            <div class="faq-container">
+
+                <div class="faq-item fade-up">
+
+                    <h3>
+                        Why was this archive created?
+                    </h3>
+
+                    <p>
+                        The archive was created to provide accessible
+                        research and case studies regarding the impacts
+                        of over-urbanization around the world.
+                    </p>
+
+                </div>
+
+                <div class="faq-item fade-up">
+
+                    <h3>
+                        What topics are covered?
+                    </h3>
+
+                    <p>
+                        The website focuses on social, economic,
+                        political, and environmental impacts of
+                        rapid urban growth.
+                    </p>
+
+                </div>
+
+                <div class="faq-item fade-up">
+
+                    <h3>
+                        Can students use this archive for research?
+                    </h3>
+
+                    <p>
+                        Yes. The website was specifically designed to
+                        support students, researchers, and anyone
+                        interested in urbanization studies.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+
+                <h3>
+                    The Over-Urbanization Archive
+                </h3>
+
+                <p>
+                    Researching the impacts of rapid urban growth
+                    through global case studies and analysis.
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>
+                    Navigation
+                </h3>
+
+                <p><a href="index.html">Home</a></p>
+                <p><a href="about.html">About</a></p>
+                <p><a href="archive.html">Archive</a></p>
+                <p><a href="contact.html">Contact</a></p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>
+                    Follow
+                </h3>
+
+                <div class="social-icons">
+
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-youtube"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+
+            © 2026 The Over-Urbanization Archive
+
+        </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+
+    <script>
+
+        const contactForm = document.getElementById("contactForm");
+
+        contactForm.addEventListener("submit", function(e){
+
+            e.preventDefault();
+
+            alert("Message Sent Successfully!");
+
+            contactForm.reset();
+
+        });
+
+    </script>
+
+</body>
+</html>
