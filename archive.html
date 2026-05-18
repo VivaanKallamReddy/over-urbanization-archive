@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Archive | The Over-Urbanization Archive</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+
+        .archive-hero{
+            height:55vh;
+
+            background:
+            linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+            url('https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1600&auto=format&fit=crop');
+
+            background-size:cover;
+            background-position:center;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+
+            color:white;
+        }
+
+        .archive-hero h1{
+            color:white;
+            margin-bottom:20px;
+        }
+
+        .archive-hero p{
+            color:white;
+            max-width:700px;
+            margin:auto;
+            font-size:1.15rem;
+        }
+
+        .search-section{
+            background:white;
+            padding-top:70px;
+            padding-bottom:30px;
+        }
+
+        .search-box{
+            max-width:700px;
+            margin:auto;
+            position:relative;
+        }
+
+        .search-box input{
+            width:100%;
+            padding:22px 25px 22px 65px;
+            border:none;
+            border-radius:15px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.08);
+            font-size:1rem;
+        }
+
+        .search-box i{
+            position:absolute;
+            left:25px;
+            top:23px;
+            color:#888;
+            font-size:1.1rem;
+        }
+
+        .filter-row{
+            margin-top:40px;
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            flex-wrap:wrap;
+        }
+
+        .filter-btn{
+            padding:12px 28px;
+            border:none;
+            background:var(--light-grey);
+            border-radius:30px;
+            cursor:pointer;
+            transition:0.3s;
+            font-weight:500;
+        }
+
+        .filter-btn:hover{
+            background:var(--sky-blue);
+            color:white;
+        }
+
+        .archive-section{
+            background:#fafafa;
+        }
+
+        .archive-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));
+            gap:40px;
+            margin-top:60px;
+        }
+
+        .archive-card{
+            background:white;
+            overflow:hidden;
+            border-radius:25px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.08);
+            transition:0.35s;
+        }
+
+        .archive-card:hover{
+            transform:translateY(-12px);
+        }
+
+        .archive-card img{
+            width:100%;
+            height:260px;
+            object-fit:cover;
+        }
+
+        .archive-content{
+            padding:35px;
+        }
+
+        .archive-content h3{
+            margin-bottom:10px;
+        }
+
+        .archive-content p{
+            margin-bottom:25px;
+        }
+
+        .impact-tags{
+            display:flex;
+            flex-wrap:wrap;
+            gap:10px;
+            margin-bottom:25px;
+        }
+
+        .impact-tags span{
+            background:#eef7fb;
+            color:var(--sky-blue);
+            padding:8px 16px;
+            border-radius:20px;
+            font-size:0.9rem;
+            font-weight:500;
+        }
+
+        .read-btn{
+            display:inline-block;
+            background:var(--sky-blue);
+            color:white;
+            padding:14px 28px;
+            border-radius:10px;
+            font-weight:600;
+            transition:0.3s;
+        }
+
+        .read-btn:hover{
+            opacity:0.9;
+        }
+
+        .stats-banner{
+            background:var(--sky-blue);
+            padding:80px 10%;
+            color:white;
+        }
+
+        .stats-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+            gap:40px;
+            text-align:center;
+        }
+
+        .stats-item h2{
+            color:white;
+            font-size:3rem;
+        }
+
+        .stats-item p{
+            color:white;
+            opacity:0.9;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Over-Urbanization Archive
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="archive.html">Archive</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html" class="login-btn">Login</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="archive-hero">
+
+        <div class="fade-up">
+
+            <h1>
+                Global Urbanization Archive
+            </h1>
+
+            <p>
+                Explore detailed case studies documenting the social,
+                economic, political, and environmental impacts of
+                over-urbanization around the world.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- SEARCH -->
+
+    <section class="search-section">
+
+        <div class="container">
+
+            <div class="search-box fade-up">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                type="text"
+                id="searchInput"
+                placeholder="Search cities, countries, or impacts...">
+
+            </div>
+
+            <div class="filter-row fade-up">
+
+                <button class="filter-btn">Social</button>
+                <button class="filter-btn">Economic</button>
+                <button class="filter-btn">Political</button>
+                <button class="filter-btn">Environmental</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ARCHIVE GRID -->
+
+    <section class="archive-section">
+
+        <div class="container">
+
+            <div class="archive-grid" id="archiveGrid">
+
+                <!-- MUMBAI -->
+
+                <div class="archive-card fade-up">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?q=80&w=1200&auto=format&fit=crop"
+                    alt="Mumbai">
+
+                    <div class="archive-content">
+
+                        <h3>
+                            Mumbai
+                        </h3>
+
+                        <p>
+                            India
+                        </p>
+
+                        <div class="impact-tags">
+
+                            <span>Social</span>
+                            <span>Economic</span>
+                            <span>Political</span>
+                            <span>Environmental</span>
+
+                        </div>
+
+                        <p>
+                            A city experiencing severe overcrowding,
+                            slum expansion, flooding, pollution,
+                            and infrastructure strain.
+                        </p>
+
+                        <a href="cities/mumbai.html" class="read-btn">
+                            Read Case Study
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- LAGOS -->
+
+                <div class="archive-card fade-up">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop"
+                    alt="Lagos">
+
+                    <div class="archive-content">
+
+                        <h3>
+                            Lagos
+                        </h3>
+
+                        <p>
+                            Nigeria
+                        </p>
+
+                        <div class="impact-tags">
+
+                            <span>Social</span>
+                            <span>Economic</span>
+                            <span>Political</span>
+                            <span>Environmental</span>
+
+                        </div>
+
+                        <p>
+                            One of Africa’s fastest growing cities,
+                            facing flooding, informal settlements,
+                            and severe inequality.
+                        </p>
+
+                        <a href="cities/lagos.html" class="read-btn">
+                            Read Case Study
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- DHAKA -->
+
+                <div class="archive-card fade-up">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
+                    alt="Dhaka">
+
+                    <div class="archive-content">
+
+                        <h3>
+                            Dhaka
+                        </h3>
+
+                        <p>
+                            Bangladesh
+                        </p>
+
+                        <div class="impact-tags">
+
+                            <span>Social</span>
+                            <span>Economic</span>
+                            <span>Political</span>
+                            <span>Environmental</span>
+
+                        </div>
+
+                        <p>
+                            A densely populated city struggling with
+                            pollution, congestion, climate migration,
+                            and infrastructure pressure.
+                        </p>
+
+                        <a href="cities/dhaka.html" class="read-btn">
+                            Read Case Study
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- SAO PAULO -->
+
+                <div class="archive-card fade-up">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?q=80&w=1200&auto=format&fit=crop"
+                    alt="Sao Paulo">
+
+                    <div class="archive-content">
+
+                        <h3>
+                            São Paulo
+                        </h3>
+
+                        <p>
+                            Brazil
+                        </p>
+
+                        <div class="impact-tags">
+
+                            <span>Social</span>
+                            <span>Economic</span>
+                            <span>Political</span>
+                            <span>Environmental</span>
+
+                        </div>
+
+                        <p>
+                            Rapid industrial growth contributed to
+                            inequality, urban sprawl, and environmental
+                            degradation.
+                        </p>
+
+                        <a href="cities/saopaulo.html" class="read-btn">
+                            Read Case Study
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- JAKARTA -->
+
+                <div class="archive-card fade-up">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=1200&auto=format&fit=crop"
+                    alt="Jakarta">
+
+                    <div class="archive-content">
+
+                        <h3>
+                            Jakarta
+                        </h3>
+
+                        <p>
+                            Indonesia
+                        </p>
+
+                        <div class="impact-tags">
+
+                            <span>Social</span>
+                            <span>Economic</span>
+                            <span>Political</span>
+                            <span>Environmental</span>
+
+                        </div>
+
+                        <p>
+                            Jakarta faces flooding, land subsidence,
+                            pollution, and extreme congestion caused
+                            by rapid urban growth.
+                        </p>
+
+                        <a href="cities/jakarta.html" class="read-btn">
+                            Read Case Study
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- STATS BANNER -->
+
+    <section class="stats-banner">
+
+        <div class="stats-grid">
+
+            <div class="stats-item fade-up">
+
+                <h2>
+                    5+
+                </h2>
+
+                <p>
+                    Major Global Case Studies
+                </p>
+
+            </div>
+
+            <div class="stats-item fade-up">
+
+                <h2>
+                    4
+                </h2>
+
+                <p>
+                    Impact Categories
+                </p>
+
+            </div>
+
+            <div class="stats-item fade-up">
+
+                <h2>
+                    3000+
+                </h2>
+
+                <p>
+                    Words Of Urban Research
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+
+                <h3>
+                    The Over-Urbanization Archive
+                </h3>
+
+                <p>
+                    Researching the impacts of rapid urban growth
+                    through global case studies and analysis.
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>
+                    Navigation
+                </h3>
+
+                <p><a href="index.html">Home</a></p>
+                <p><a href="about.html">About</a></p>
+                <p><a href="archive.html">Archive</a></p>
+                <p><a href="contact.html">Contact</a></p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>
+                    Follow
+                </h3>
+
+                <div class="social-icons">
+
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-youtube"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+
+            © 2026 The Over-Urbanization Archive
+
+        </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

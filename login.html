@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | The Over-Urbanization Archive</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/auth.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Over-Urbanization Archive
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="archive.html">Archive</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <section class="auth-section">
+
+        <div class="auth-card fade-up">
+
+            <div class="auth-left">
+
+                <h1>Welcome Back</h1>
+
+                <p>
+                    Access global over-urbanization research,
+                    case studies, and academic archives.
+                </p>
+
+                <img
+                src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1200&auto=format&fit=crop"
+                alt="City">
+
+            </div>
+
+            <div class="auth-right">
+
+                <h2>Login</h2>
+
+                <form id="loginForm">
+
+                    <div class="input-group">
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <input
+                        type="email"
+                        id="loginEmail"
+                        placeholder="Enter your email"
+                        required>
+                    </div>
+
+                    <div class="input-group">
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Enter your password"
+                        required>
+                    </div>
+
+                    <div class="remember-row">
+
+                        <label>
+                            <input type="checkbox">
+                            Remember Me
+                        </label>
+
+                        <a href="#">Forgot Password?</a>
+
+                    </div>
+
+                    <button type="submit" class="auth-btn">
+                        Login
+                    </button>
+
+                    <p class="switch-text">
+                        Don't have an account?
+                        <a href="signup.html">Create One</a>
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+
+</body>
+</html>
